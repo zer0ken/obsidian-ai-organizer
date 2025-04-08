@@ -3,11 +3,11 @@ import {
 	OrganizerPluginSettingTab,
 	OrganizerSettings,
 	DEFAULT_SETTINGS,
-} from "src/components/setting-tab";
+} from "src/setting-tab";
 import {
 	OrganizerView,
 	VIEW_TYPE_ORGANIZER,
-} from "src/components/organizer/organizer-view";
+} from "src/organizer-view";
 import { t } from "src/i18n";
 
 export default class OrganizerPlugin extends Plugin {
