@@ -17,7 +17,7 @@ export default class OrganizerPlugin extends Plugin {
 	async onload() {
 		await this.loadSettings();
 
-		// this.initStatusBar();
+		this.initStatusBar();
 
 		this.registerView(
 			VIEW_TYPE_ORGANIZER,
@@ -74,20 +74,20 @@ export default class OrganizerPlugin extends Plugin {
 		await this.saveData(this.settings);
 	}
 
-	// initStatusBar() {
-	// 	const statusBar = this.addStatusBarItem();
-	// 	statusBar.addClass(
-	// 		"organizer-status",
-	// 		"status-bar-item",
-	// 		"status-bar-item-icon",
-	// 		"mod-clickable"
-	// 	);
-	// 	setIcon(statusBar, "sparkles");
-	// 	setTooltip(statusBar, t("organizer_plugin.activate_view"), {
-	// 		placement: "top",
-	// 	});
-	// 	statusBar.addEventListener("click", () => {
-	// 		this.activateView();
-	// 	});
-	// }
+	initStatusBar() {
+		const statusBar = this.addStatusBarItem();
+		statusBar.addClass(
+			"organizer-status",
+			"status-bar-item",
+			"status-bar-item-icon",
+			"mod-clickable"
+		);
+		setIcon(statusBar, "sparkles");
+		setTooltip(statusBar, t("organizer_plugin.activate_view"), {
+			placement: "top",
+		});
+		statusBar.addEventListener("click", () => {
+			this.activateView();
+		});
+	}
 }
