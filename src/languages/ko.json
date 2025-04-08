@@ -1,6 +1,8 @@
 {
   "organizer_plugin.ribbon_icon.title": "사이드바에서 Organizer 열기",
   "organizer_plugin.leaf_is_null": "사이드바를 열 수 없습니다.",
+  "organizer_view.file_selector.title": "선택된 파일",
+  "organizer_view.file_selector.placeholder": "파일을 선택하세요...",
   "settings.title": "플러그인 설정",
   "settings.model.name": "모델",
   "settings.model.desc": "사용할 Gemini 모델을 입력하세요",
