@@ -1,16 +1,18 @@
 {
-  "organizer_plugin.activate_view": "Open Organizer in Sidebar",
-  "organizer_plugin.leaf_is_null": "Cannot open sidebar.",
+  "organizer_plugin.activate_view": "Open Organizer in sidebar",
+  "organizer_plugin.leaf_is_null": "Cannot open sidebar",
   "organizer_view.file_selector.title": "Selected File",
-  "organizer_view.file_selector.placeholder": "Select a file...",
+  "organizer_view.file_selector.placeholder": "Select a note to reorganize",
+  "organizer_view.select_current_note": "Select Current Note",
+  "organizer_view.start_organizing": "Reorganize Selected Note",
   "settings.title": "Plugin Settings",
   "settings.model.name": "Model",
-  "settings.model.desc": "Enter the Gemini model to use", 
-  "settings.model.placeholder": "Enter the model name",
+  "settings.model.desc": "Enter the Gemini model to use",
+  "settings.model.placeholder": "Enter model name",
   "settings.gemini_api_key.name": "Gemini API Key",
   "settings.gemini_api_key.desc": "Enter your Gemini API key",
-  "settings.gemini_api_key.placeholder": "Enter your key",
+  "settings.gemini_api_key.placeholder": "Enter key",
   "settings.prompt_template.name": "Prompt Template",
-  "settings.prompt_template.desc": "Enter your prompt template",
-  "settings.prompt_template.placeholder": "Enter your prompt"
+  "settings.prompt_template.desc": "Enter prompt template",
+  "settings.prompt_template.placeholder": "Enter prompt"
 }
