@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "obsidian-ai-organizer",
+	"name": "Obsidian AI Organizer",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"description": "Organize your messy notes into a clean structure.",
+	"author": "zer0ken",
+	"authorUrl": "https://github.com/zer0ken",
+	"fundingUrl": "https://buymeacoffee.com/zer0ken",
 	"isDesktopOnly": false
 }
