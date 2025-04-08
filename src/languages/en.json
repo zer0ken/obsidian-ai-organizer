@@ -1,7 +1,9 @@
 {
+  "organizer_plugin.ribbon_icon.title": "Open Organizer in Sidebar",
+  "organizer_plugin.leaf_is_null": "Cannot open sidebar.",
   "settings.title": "Settings for my awesome plugin",
   "settings.model.name": "Model",
-  "settings.model.desc": "Enter the Gemini model to use",
+  "settings.model.desc": "Enter the Gemini model to use", 
   "settings.model.placeholder": "Enter the model name",
   "settings.gemini_api_key.name": "Gemini API Key",
   "settings.gemini_api_key.desc": "Enter your Gemini API key",
