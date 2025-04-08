@@ -18,3 +18,7 @@ If your plugin does not need CSS, delete this file.
 .file-selection-container {
     position: relative;
 }
+
+.organizer-status {
+    padding: 0 var(--size-2-2);
+}

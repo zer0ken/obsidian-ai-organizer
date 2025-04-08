@@ -1,7 +1,9 @@
 {
-  "organizer_plugin.ribbon_icon.title": "サイドバーでOrganizerを開く",
-  "organizer_plugin.leaf_is_null": "サイドバーを開けません。",
-  "settings.title": "素晴らしいプラグインの設定",
+  "organizer_plugin.activate_view": "サイドバーでOrganizerを開く",
+  "organizer_plugin.leaf_is_null": "サイドバーを開けません",
+  "organizer_view.file_selector.title": "選択されたファイル",
+  "organizer_view.file_selector.placeholder": "ファイルを選択してください...",
+  "settings.title": "プラグイン設定",
   "settings.model.name": "モデル",
   "settings.model.desc": "使用するGeminiモデルを入力してください",
   "settings.model.placeholder": "モデル名を入力",

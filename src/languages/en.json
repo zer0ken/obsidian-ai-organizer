@@ -1,7 +1,9 @@
 {
-  "organizer_plugin.ribbon_icon.title": "Open Organizer in Sidebar",
+  "organizer_plugin.activate_view": "Open Organizer in Sidebar",
   "organizer_plugin.leaf_is_null": "Cannot open sidebar.",
-  "settings.title": "Settings for my awesome plugin",
+  "organizer_view.file_selector.title": "Selected File",
+  "organizer_view.file_selector.placeholder": "Select a file...",
+  "settings.title": "Plugin Settings",
   "settings.model.name": "Model",
   "settings.model.desc": "Enter the Gemini model to use", 
   "settings.model.placeholder": "Enter the model name",

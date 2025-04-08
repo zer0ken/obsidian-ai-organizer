@@ -1,4 +1,4 @@
-import { Notice, Plugin, WorkspaceLeaf } from "obsidian";
+import { Notice, Plugin, WorkspaceLeaf, setIcon, setTooltip } from "obsidian";
 import {
 	OrganizerPluginSettingTab,
 	OrganizerSettings,
@@ -12,18 +12,25 @@ import { t } from "src/i18n";
 
 export default class OrganizerPlugin extends Plugin {
 	settings: OrganizerSettings = DEFAULT_SETTINGS;
+	statusBarItem: HTMLSpanElement | null = null;
 
 	async onload() {
 		await this.loadSettings();
+
+		// this.initStatusBar();
 
 		this.registerView(
 			VIEW_TYPE_ORGANIZER,
 			(leaf) => new OrganizerView(leaf)
 		);
 
-		this.addRibbonIcon("layout-list", t("organizer_plugin.ribbon_icon.title"), () => {
-			this.activateView();
-		});
+		this.addRibbonIcon(
+			"sparkles",
+			t("organizer_plugin.activate_view"),
+			() => {
+				this.activateView();
+			}
+		);
 
 		this.addSettingTab(new OrganizerPluginSettingTab(this.app, this));
 	}
@@ -46,7 +53,10 @@ export default class OrganizerPlugin extends Plugin {
 				new Notice(t("organizer_plugin.leaf_is_null"));
 				return;
 			}
-			await leaf.setViewState({ type: VIEW_TYPE_ORGANIZER, active: true });
+			await leaf.setViewState({
+				type: VIEW_TYPE_ORGANIZER,
+				active: true,
+			});
 		}
 
 		workspace.revealLeaf(leaf);
@@ -63,4 +73,21 @@ export default class OrganizerPlugin extends Plugin {
 	async saveSettings() {
 		await this.saveData(this.settings);
 	}
+
+	// initStatusBar() {
+	// 	const statusBar = this.addStatusBarItem();
+	// 	statusBar.addClass(
+	// 		"organizer-status",
+	// 		"status-bar-item",
+	// 		"status-bar-item-icon",
+	// 		"mod-clickable"
+	// 	);
+	// 	setIcon(statusBar, "sparkles");
+	// 	setTooltip(statusBar, t("organizer_plugin.activate_view"), {
+	// 		placement: "top",
+	// 	});
+	// 	statusBar.addEventListener("click", () => {
+	// 		this.activateView();
+	// 	});
+	// }
 }
