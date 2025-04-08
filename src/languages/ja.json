@@ -1,0 +1,12 @@
+{
+  "settings.title": "素晴らしいプラグインの設定",
+  "settings.model.name": "モデル",
+  "settings.model.desc": "使用するGeminiモデルを入力してください",
+  "settings.model.placeholder": "モデル名を入力",
+  "settings.gemini_api_key.name": "Gemini APIキー",
+  "settings.gemini_api_key.desc": "Gemini APIキーを入力してください",
+  "settings.gemini_api_key.placeholder": "キーを入力",
+  "settings.prompt_template.name": "プロンプトテンプレート",
+  "settings.prompt_template.desc": "プロンプトテンプレートを入力してください",
+  "settings.prompt_template.placeholder": "プロンプトを入力"
+}

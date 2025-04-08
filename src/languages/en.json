@@ -1,0 +1,12 @@
+{
+  "settings.title": "Settings for my awesome plugin",
+  "settings.model.name": "Model",
+  "settings.model.desc": "Enter the Gemini model to use",
+  "settings.model.placeholder": "Enter the model name",
+  "settings.gemini_api_key.name": "Gemini API Key",
+  "settings.gemini_api_key.desc": "Enter your Gemini API key",
+  "settings.gemini_api_key.placeholder": "Enter your key",
+  "settings.prompt_template.name": "Prompt Template",
+  "settings.prompt_template.desc": "Enter your prompt template",
+  "settings.prompt_template.placeholder": "Enter your prompt"
+}
